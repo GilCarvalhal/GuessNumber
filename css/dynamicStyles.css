@@ -1,5 +1,5 @@
 .result-box .result-box-default {
-  background-color: var(--white);
+  background: var(--white);
   color: var(--blue);
 }
 

@@ -19,8 +19,8 @@ const guessNumber = {
   clearInput: function () {
     inputValue.value = "";
   },
-  updateAttempt: function (attempt, value) {
-    attempt.innerHTML = "Tentativa: " + value;
+  updateAttempt: function (value) {
+    attempt.innerHTML = value;
   },
   correctAnswear: function () {
     this.showButtonRestart();
@@ -53,7 +53,7 @@ function handleSubmit(e) {
     return;
   }
 
-  guessNumber.updateAttempt(attempt, ++guessNumber.attemptNumber);
+  guessNumber.updateAttempt(++guessNumber.attemptNumber);
 
   if (numberDraw == kick) {
     guessNumber.correctAnswear();
